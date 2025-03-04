@@ -1,6 +1,6 @@
-package gr.aueb.cf.ch19.sorting;
+package gr.aueb.cf.ch19.streams;
 
-public class Product implements Comparable<Product>{
+public class Product{
     private String name;
     private double price;
     private int quantity;
@@ -35,11 +35,6 @@ public class Product implements Comparable<Product>{
 
     public void setQuantity(int quantity) {
         quantity = quantity;
-    }
-
-    @Override
-    public int compareTo(Product o) {
-        return this.name.compareTo(o.name);
     }
 
     @Override
